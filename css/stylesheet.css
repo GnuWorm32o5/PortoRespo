@@ -207,6 +207,7 @@ span {
 .service-box:hover {
     box-shadow: 0 0 1px 1px var(--main-color);
     transform: translateY(-12px);
+    
 }
 
 .service i {
@@ -244,5 +245,64 @@ span {
     transform: scale(1.1);
 }
 
+.contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    align-items: center;
+    gap: 2.2rem;
+}
 
+.left-contact {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 4rem;
+}
 
+.in i {
+    color: var(--main-color);
+    opacity: 0.5;
+    font-size: 7rem;
+    margin-bottom: 1rem;
+    transition: all ease .40s;
+}
+
+.in i:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.in h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.right-contact h2 {
+    font-size: var(--h2-font);
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.right-contact a {
+    display: inline-block;
+    color: var(--main-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid var(--main-color);
+    padding: 3px 0;
+    transition: all ease .40s;
+}
+
+.right-contact a:hover{
+    border-bottom: 2px solid var(--text-color);
+}
+
+.right-contact p {
+    color: var(--other-color);
+    font-size: var(--p-font);
+    line-height: 1.5rem;
+    
+}
