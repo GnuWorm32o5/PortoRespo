@@ -126,7 +126,7 @@ section {
 header.sticky {
     padding: 15px 11%;
     background: #000;
-    border-bottom: 1px solid #e4e4e4;
+    border-bottom: 1px solid var(--main-color);
 }
 
 .about {
@@ -166,7 +166,7 @@ span {
     margin-bottom: 3rem;
 }
 
-.service {
+.services {
     background: var(--second-bg-color);
 }
 
@@ -210,19 +210,19 @@ span {
     
 }
 
-.service i {
+.services i {
     font-size: 5rem;
     color: var(--main-color);
     margin-bottom: 10px;
 }
 
-.service h3 {
+.services h3 {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
-.service p {
+.services p {
     color: var(--other-color);
     font-size: var(--p-font);
     line-height: 1.5rem;
@@ -304,5 +304,60 @@ span {
     color: var(--other-color);
     font-size: var(--p-font);
     line-height: 1.5rem;
-    
+
 }
+
+.end-section {
+    padding: 80px 19% 70px;
+    background: var(--second-bg-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.end-section h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.end-section p {
+    color: var(--other-color);
+    font-size: var(--p-font);
+    line-height: 1rem;
+    margin-bottom: 2rem;
+}
+
+.end-section i {
+    height: 2rem;
+    width: 2rem;
+    background: var(--main-color);
+    color: var(--text-color);
+    border: 2px solid var(--main-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    margin: 0 9px;
+    transition: all ease .50s;
+}
+
+.end-section i:hover {
+    transform: translateY(-5px);
+    background: transparent;
+    border: 2px solid var(--main-color);
+    scale: 1.5;
+}
+
+.scroll-btn {
+    position: fixed;
+    right: 2.2rem;
+    bottom: 2.2rem;
+    color: var(--main-color);
+    scale: 2;
+}
+
+
+
